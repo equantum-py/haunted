@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import './commercial.css';
 
 export const metadata: Metadata = {
   title: 'Haunted | Tienda Online',
