@@ -2,27 +2,27 @@ import { Search, ShoppingCart, Heart, Menu, Truck, ShieldCheck, MessageCircle, C
 
 const categories = ['Termos y mates','Bazar','Hogar','Belleza','Regalos','Organización','Cocina','Accesorios'];
 const products = [
-{name:'Set X12 Utensilios de Cocina Mango Madera Punta Silicona',category:'Cocina',price:'₲ 115.000',old:'₲ 139.000',tag:'OFERTA'},
-{name:'Termo Stanley Original Mate System Classic 1.2 L',category:'Termos y mates',price:'₲ 189.000',old:'₲ 219.000',tag:'-14%'},
-{name:'Termo Stanley Mate System Rose Quartz 800 ml',category:'Termos y mates',price:'₲ 153.000',old:'₲ 179.000',tag:'OFERTA'},
-{name:'Stanley Classic Mate System 1.2 Lts Verde',category:'Termos y mates',price:'₲ 182.000',old:'₲ 209.000',tag:'-13%'},
-{name:'Stanley Termo Adventure 500 ml Polar',category:'Termos y mates',price:'₲ 95.000',old:'₲ 110.000',tag:'-14%'},
-{name:'Botella Térmica Stanley Flip Straw 887 ml',category:'Termos y mates',price:'₲ 124.000',old:'₲ 145.000',tag:'NUEVO'},
-{name:'Botellón Stanley Iceflow Flip Straw 1.9 Lts',category:'Termos y mates',price:'₲ 214.000',old:'',tag:'NUEVO'},
-{name:'Termo Stanley Classic Negro 591 ml',category:'Termos y mates',price:'₲ 113.260',old:'',tag:'OFERTA'},
-{name:'Botella de Agua Stanley Iceflow Fast Flow',category:'Termos y mates',price:'₲ 104.500',old:'₲ 110.000',tag:'-5%'},
-{name:'Stanley Quencher 40 Oz Vaso Acero Inoxidable',category:'Termos y mates',price:'₲ 157.000',old:'',tag:'NUEVO'},
-{name:'Combo Maquillaje Tejar X10 Kit Make Up Box Completo',category:'Belleza',price:'₲ 129.000',old:'₲ 149.000',tag:'OFERTA'},
-{name:'Máscara de Pestañas Maybelline Colossal Bubble',category:'Belleza',price:'₲ 89.000',old:'',tag:'NUEVO'},
-{name:'Brillo Labial Maybelline Lifter Gloss',category:'Belleza',price:'₲ 79.000',old:'',tag:'NUEVO'},
-{name:'Tinta de Labios Maybelline Super Stay Teddy Tint',category:'Belleza',price:'₲ 92.000',old:'',tag:'NUEVO'},
-{name:'Bronzer 3 en 1 Rimmel London Multitasker',category:'Belleza',price:'₲ 85.000',old:'',tag:'NUEVO'},
-{name:'Paleta de Sombras Precious Obsidian Ruby Rose',category:'Belleza',price:'₲ 69.000',old:'',tag:'OFERTA'},
-{name:'Ramo de Maquillaje Profesional Mediano Tejar',category:'Regalos',price:'₲ 32.713',old:'₲ 35.500',tag:'-7%'},
-{name:'Ramo de Maquillaje Profesional Regalo Tejar',category:'Regalos',price:'₲ 42.659',old:'',tag:'REGALO'}
+{name:'Set X12 Utensilios de Cocina Mango Madera Punta Silicona',category:'Cocina',price:'₲ 115.000',old:'₲ 139.000',tag:'OFERTA',image:'/products/termo-green.svg'},
+{name:'Termo Stanley Original Mate System Classic 1.2 L',category:'Termos y mates',price:'₲ 189.000',old:'₲ 219.000',tag:'-14%',image:'/products/termo-black.svg'},
+{name:'Termo Stanley Mate System Rose Quartz 800 ml',category:'Termos y mates',price:'₲ 153.000',old:'₲ 179.000',tag:'OFERTA',image:'/products/termo-rose.svg'},
+{name:'Stanley Classic Mate System 1.2 Lts Verde',category:'Termos y mates',price:'₲ 182.000',old:'₲ 209.000',tag:'-13%',image:'/products/termo-green.svg'},
+{name:'Stanley Termo Adventure 500 ml Polar',category:'Termos y mates',price:'₲ 95.000',old:'₲ 110.000',tag:'-14%',image:'/products/termo-polar.svg'},
+{name:'Botella Térmica Stanley Flip Straw 887 ml',category:'Termos y mates',price:'₲ 124.000',old:'₲ 145.000',tag:'NUEVO',image:'/products/tumbler-sage.svg'},
+{name:'Botellón Stanley Iceflow Flip Straw 1.9 Lts',category:'Termos y mates',price:'₲ 214.000',old:'',tag:'NUEVO',image:'/products/tumbler-cream.svg'},
+{name:'Termo Stanley Classic Negro 591 ml',category:'Termos y mates',price:'₲ 113.260',old:'',tag:'OFERTA',image:'/products/termo-black.svg'},
+{name:'Botella de Agua Stanley Iceflow Fast Flow',category:'Termos y mates',price:'₲ 104.500',old:'₲ 110.000',tag:'-5%',image:'/products/tumbler-navy.svg'},
+{name:'Stanley Quencher 40 Oz Vaso Acero Inoxidable',category:'Termos y mates',price:'₲ 157.000',old:'',tag:'NUEVO',image:'/products/tumbler-black.svg'},
+{name:'Combo Maquillaje Tejar X10 Kit Make Up Box Completo',category:'Belleza',price:'₲ 129.000',old:'₲ 149.000',tag:'OFERTA',image:'/products/tumbler-pink.svg'},
+{name:'Máscara de Pestañas Maybelline Colossal Bubble',category:'Belleza',price:'₲ 89.000',old:'',tag:'NUEVO',image:'/products/tumbler-pink.svg'},
+{name:'Brillo Labial Maybelline Lifter Gloss',category:'Belleza',price:'₲ 79.000',old:'',tag:'NUEVO',image:'/products/tumbler-cream.svg'},
+{name:'Tinta de Labios Maybelline Super Stay Teddy Tint',category:'Belleza',price:'₲ 92.000',old:'',tag:'NUEVO',image:'/products/tumbler-pink.svg'},
+{name:'Bronzer 3 en 1 Rimmel London Multitasker',category:'Belleza',price:'₲ 85.000',old:'',tag:'NUEVO',image:'/products/termo-rose.svg'},
+{name:'Paleta de Sombras Precious Obsidian Ruby Rose',category:'Belleza',price:'₲ 69.000',old:'',tag:'OFERTA',image:'/products/tumbler-black.svg'},
+{name:'Ramo de Maquillaje Profesional Mediano Tejar',category:'Regalos',price:'₲ 32.713',old:'₲ 35.500',tag:'-7%',image:'/products/tumbler-pink.svg'},
+{name:'Ramo de Maquillaje Profesional Regalo Tejar',category:'Regalos',price:'₲ 42.659',old:'',tag:'REGALO',image:'/products/termo-rose.svg'}
 ];
 
-function ProductCard({p,i}:{p:typeof products[number],i:number}){return <article className="product-card"><div className={`product-photo photo-${(i%6)+1}`}><span className="discount">{p.tag}</span><button className="heart" aria-label="Agregar a favoritos"><Heart size={18}/></button><div className="photo-placeholder"><span>{p.category==='Belleza'||p.category==='Regalos'?'BELLEZA':p.category==='Cocina'?'COCINA':'STANLEY'}</span><small>Foto real pendiente</small></div></div><div className="product-info"><small>{p.category}</small><h3>{p.name}</h3><div className="price-row"><strong>{p.price}</strong>{p.old&&<del>{p.old}</del>}</div><span className="delivery">Delivery disponible</span><button className="add">Agregar al carrito <ShoppingCart size={16}/></button></div></article>}
+function ProductCard({p,i}:{p:typeof products[number],i:number}){return <article className="product-card"><div className={`product-photo photo-${(i%6)+1}`}><span className="discount">{p.tag}</span><button className="heart" aria-label="Agregar a favoritos"><Heart size={18}/></button><img className="product-img" src={p.image} alt={p.name}/></div><div className="product-info"><small>{p.category}</small><h3>{p.name}</h3><div className="price-row"><strong>{p.price}</strong>{p.old&&<del>{p.old}</del>}</div><span className="delivery">Delivery disponible</span><button className="add">Agregar al carrito <ShoppingCart size={16}/></button></div></article>}
 function ProductRow({items}:{items:typeof products}){return <div className="product-scroll">{items.map((p,i)=><ProductCard key={`${p.name}-${i}`} p={p} i={i}/>)}</div>}
 
 export default function HomePage(){const ofertas=products.slice(0,6),termos=products.slice(5,11),belleza=products.slice(11,18);return <main>
